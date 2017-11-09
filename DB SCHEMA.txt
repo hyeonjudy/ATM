@@ -1,0 +1,24 @@
+create table atmuser(
+	uname varchar2(20) not null,
+	uaccount varchar2(20) primary key,
+	upw varchar2(20) not null,
+	ucontent varchar2(20) not null,
+	uamount varchar2(10) not null,
+	ubalance varchar(20) not null,
+	udate varchar2(20) not null
+); 
+
+create table history(
+	uname varchar2(20) not null,
+	uaccount varchar2(20) primary key,
+	upw varchar2(20) not null,
+	ucontent varchar2(20) not null,
+	uamount varchar2(10) not null,
+	ubalance varchar(20) not null,
+	udate varchar2(20) not null
+); 
+
+create table atmmanager(
+	mname varchar2(20) primary key,
+	mpw varchar2(20) not null
+);
